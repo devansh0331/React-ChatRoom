@@ -1,0 +1,137 @@
+.chat{
+    box-sizing: 2px 2px 10px red;
+    height: inherit;
+    background: linear-gradient(to right , rgb(255, 8, 0) , rgb(255, 4, 4));
+    padding: 20px;
+    width: 100vw;
+    margin: 3rem auto;
+    border-radius: 10px;
+}
+
+.chatArea{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+    width: 80vw;
+    margin: 1rem auto;
+    
+
+}
+
+.chatMsg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(240, 237, 237);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+    width:78vw ;
+    height: inherit;
+}
+.chatMsg h1{
+    font-size: 1rem;
+}
+.chatMsg p{
+    /* width: 78vw; */
+    font-size: 1rem;
+}
+
+#chatInp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#chatBox , #sendBtn{
+    padding: 10px;
+   
+    font-size: 1rem;
+    border-radius:5px;
+    border: 1px solid black;
+    margin-left: 1rem;
+}
+
+
+
+#sendBtn{
+    font-weight: bold;
+    background: blue;
+    color: white;
+  
+   
+
+}
+
+
+
+@media only screen and (max-width: 780px) {
+
+    .chatMsg h1{
+        font-size: 0.8rem;
+    }
+     .chatMsg p{
+      font-size: 0.7rem;
+      max-width: 100%;
+    }
+    .chat button{
+      font-size: 1.2rem;
+    }
+
+    .chat{
+        width: 100%;
+    }
+
+    .chatMsg{
+        /* flex-direction: column; */
+        align-items: start;
+        
+    }
+    #chatBox , #sendBtn{
+        padding: 5px;
+        /* width: 50%; */
+        
+        font-size: 0.8rem;
+        border-radius:3px;
+        border: 1px solid black;
+        margin-left: 1rem;
+        ;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .chatMsg h1{
+        font-size: 0.4rem;
+        margin-bottom: -0.5rem;
+       
+    }
+     .chatMsg p{
+      font-size: 0.7rem;
+    }
+    .chat button{
+      font-size: 1.2rem;
+    }
+
+    .chat{
+        width: 100%;
+    }
+
+    .chatMsg{
+        flex-direction: column;
+        align-items: start;
+        
+    }
+    #chatBox , #sendBtn{
+        padding: 5px;
+        /* width: 100%; */
+        font-size: 0.8rem;
+        border-radius:3px;
+        border: 1px solid black;
+        margin-left: 1rem;
+        ;
+    }
+  }
+  
